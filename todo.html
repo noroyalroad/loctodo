@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #todo-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      #todo-list li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      #todo-list li i.delete-icon {
+        margin-left: 10px;
+      }
+      #todo-list li i.delete-icon:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <input type="text" id="new-todo" placeholder="Add a new to-do" />
+    <button onclick="addTodo()">Add</button>
+    <button onclick="deleteAllTodos()">Delete All</button>
+    <ul id="todo-list"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
